@@ -11,6 +11,8 @@ public class PlayerController : CharacterControllerBase
 
     protected override void UpdateInputHandler()
     {
-        model.MoveDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        var x = Input.GetAxisRaw("Horizontal");
+        var y = x == 0 ? Input.GetAxisRaw("Vertical") : 0;
+        model.MoveDir = new Vector2(x, y);
     }
 }
