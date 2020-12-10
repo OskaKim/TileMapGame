@@ -1,0 +1,646 @@
+fileFormatVersion: 2
+guid: 6e0eda6a4a5ea844f887cd502d396b6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6226447438770930563
+    second: Ogre 01_idle (32x32)_0
+  - first:
+      213: -4330417781569273859
+    second: Ogre 01_idle (32x32)_1
+  - first:
+      213: -5867848164639357944
+    second: Ogre 01_idle (32x32)_2
+  - first:
+      213: -907005499777168296
+    second: Ogre 01_idle (32x32)_3
+  - first:
+      213: -94807740276206814
+    second: Ogre 01_idle (32x32)_4
+  - first:
+      213: -5895247709794576286
+    second: Ogre 01_idle (32x32)_5
+  - first:
+      213: 848552998301613616
+    second: Ogre 01_idle (32x32)_6
+  - first:
+      213: -1276955487950241219
+    second: Ogre 01_idle (32x32)_7
+  - first:
+      213: 4004529889485888874
+    second: Ogre 01_idle (32x32)_8
+  - first:
+      213: 8140005077027822189
+    second: Ogre 01_idle (32x32)_9
+  - first:
+      213: -2278828230686660453
+    second: Ogre 01_idle (32x32)_10
+  - first:
+      213: 1440504595754097179
+    second: Ogre 01_idle (32x32)_11
+  - first:
+      213: -3626983014707350871
+    second: Ogre 01_idle (32x32)_12
+  - first:
+      213: 7539345853155802554
+    second: Ogre 01_idle (32x32)_13
+  - first:
+      213: 541239697864592553
+    second: Ogre 01_idle (32x32)_14
+  - first:
+      213: -2356996229706362543
+    second: Ogre 01_idle (32x32)_15
+  - first:
+      213: 7453934434916049170
+    second: Ogre 01_idle (32x32)_16
+  - first:
+      213: 8253622393237385442
+    second: Ogre 01_idle (32x32)_17
+  - first:
+      213: -7575116658866013341
+    second: Ogre 01_idle (32x32)_18
+  - first:
+      213: -5892052950130868198
+    second: Ogre 01_idle (32x32)_19
+  - first:
+      213: -7391326046390244449
+    second: Ogre 01_idle (32x32)_20
+  - first:
+      213: 4574020254226953514
+    second: Ogre 01_idle (32x32)_21
+  - first:
+      213: 9021784853862554995
+    second: Ogre 01_idle (32x32)_22
+  - first:
+      213: 2794782888759790721
+    second: Ogre 01_idle (32x32)_23
+  - first:
+      213: -916392569781678997
+    second: Ogre 01_idle (32x32)_24
+  - first:
+      213: -4452560468716419458
+    second: Ogre 01_idle (32x32)_25
+  - first:
+      213: -2206474362350674035
+    second: Ogre 01_idle (32x32)_26
+  - first:
+      213: 6441857014081490610
+    second: Ogre 01_idle (32x32)_27
+  - first:
+      213: 9070298125853890581
+    second: Ogre 01_idle (32x32)_28
+  - first:
+      213: -1304398720604352185
+    second: Ogre 01_idle (32x32)_29
+  - first:
+      213: -5736002339636888069
+    second: Ogre 01_idle (32x32)_30
+  - first:
+      213: 2306762409641816796
+    second: Ogre 01_idle (32x32)_31
+  - first:
+      213: 4346339340654667603
+    second: Ogre 01_idle (32x32)_32
+  - first:
+      213: 2548042775485098728
+    second: Ogre 01_idle (32x32)_33
+  - first:
+      213: 7411112010055067925
+    second: Ogre 01_idle (32x32)_34
+  - first:
+      213: 2050757688979639055
+    second: Ogre 01_idle (32x32)_35
+  - first:
+      213: -6066662292405385453
+    second: Ogre 01_idle (32x32)_36
+  - first:
+      213: 4861786714129149109
+    second: Ogre 01_idle (32x32)_37
+  - first:
+      213: -8743010464501844844
+    second: Ogre 01_idle (32x32)_38
+  - first:
+      213: 535843750836200121
+    second: Ogre 01_idle (32x32)_39
+  - first:
+      213: -8146724646893198764
+    second: Ogre 01_idle (32x32)_40
+  - first:
+      213: -6395103404841530914
+    second: Ogre 01_idle (32x32)_41
+  - first:
+      213: 3155455166805499535
+    second: Ogre 01_idle (32x32)_42
+  - first:
+      213: 5984623864029209192
+    second: Ogre 01_idle (32x32)_43
+  - first:
+      213: 478922555665980176
+    second: Ogre 01_idle (32x32)_44
+  - first:
+      213: -4226823299205294445
+    second: Ogre 01_idle (32x32)_45
+  - first:
+      213: -2112528899813041912
+    second: Ogre 01_idle (32x32)_46
+  - first:
+      213: -3310954114335431057
+    second: Ogre 01_idle (32x32)_47
+  - first:
+      213: 1389610066562163791
+    second: Ogre 01_idle (32x32)_48
+  - first:
+      213: 9209680786005940971
+    second: Ogre 01_idle (32x32)_49
+  - first:
+      213: 6607337531722185698
+    second: Ogre 01_idle (32x32)_50
+  - first:
+      213: -2358697766459370341
+    second: Ogre 01_idle (32x32)_51
+  - first:
+      213: -723935973878624471
+    second: Ogre 01_idle (32x32)_52
+  - first:
+      213: -3351737727247865166
+    second: Ogre 01_idle (32x32)_53
+  - first:
+      213: -6312590698274833094
+    second: Ogre 01_idle (32x32)_54
+  - first:
+      213: -7625433990530728065
+    second: Ogre 01_idle (32x32)_55
+  - first:
+      213: 75910016178914830
+    second: Ogre 01_idle (32x32)_56
+  - first:
+      213: 7546237272444585291
+    second: Ogre 01_idle (32x32)_57
+  - first:
+      213: -7667593581082383953
+    second: Ogre 01_idle (32x32)_58
+  - first:
+      213: 4189253746475323448
+    second: Ogre 01_idle (32x32)_59
+  - first:
+      213: -4750140464986906993
+    second: Ogre 01_idle (32x32)_60
+  - first:
+      213: -3073795111837176536
+    second: Ogre 01_idle (32x32)_61
+  - first:
+      213: 6108008725634849866
+    second: Ogre 01_idle (32x32)_62
+  - first:
+      213: 8156919661373151058
+    second: Ogre 01_idle (32x32)_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cfa672b073799a0800000000000000
+      internalID: -6226447438770930563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff3780a8f347e3c0800000000000000
+      internalID: -4330417781569273859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8044eb6fe27319ea0800000000000000
+      internalID: -5867848164639357944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc470bd4ba963f0800000000000000
+      internalID: -907005499777168296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22311eeccdc2faef0800000000000000
+      internalID: -94807740276206814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26852ca317fdf2ea0800000000000000
+      internalID: -5895247709794576286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e3cd4c47aa6cb00800000000000000
+      internalID: 848552998301613616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d328db2dfb7574ee0800000000000000
+      internalID: -1276955487950241219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d9d33b7b2f29730800000000000000
+      internalID: 4004529889485888874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a9e1e6d7b17f070800000000000000
+      internalID: 8140005077027822189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b982ac54cc9ff50e0800000000000000
+      internalID: -2278828230686660453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a9d373c43bdf310800000000000000
+      internalID: 1440504595754097179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a23ef92a2e5aadc0800000000000000
+      internalID: -3626983014707350871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd7a28bb1321a860800000000000000
+      internalID: 7539345853155802554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac0f8933aed28700800000000000000
+      internalID: 541239697864592553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre 01_idle (32x32)_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151da6fba644a4fd0800000000000000
+      internalID: -2356996229706362543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
