@@ -14,10 +14,10 @@ public class CharacterViewBase : MonoBehaviour
 
     protected virtual void UpdateAnimator()
     {
-        var moveDir = model.MoveDir;
-        animator.SetFloat("Horizontal", moveDir.x);
-        animator.SetFloat("Vertical", moveDir.y);
+        var dir = model.Dir;
+        animator.SetFloat("Horizontal", dir.x);
+        animator.SetFloat("Vertical", dir.y);
 
-        animator.SetBool("IsMoving", !(moveDir.x == 0 && moveDir.y == 0));
+        animator.SetBool("IsMoving", model.IsMoving);
     }
 }

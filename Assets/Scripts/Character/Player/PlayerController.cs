@@ -13,6 +13,11 @@ public class PlayerController : CharacterControllerBase
     {
         var x = Input.GetAxisRaw("Horizontal");
         var y = x == 0 ? Input.GetAxisRaw("Vertical") : 0;
-        model.MoveDir = new Vector2(x, y);
+        model.IsMoving = x != 0 || y != 0;
+
+        if (model.IsMoving)
+        {
+            model.Dir = new Vector2(x, y);
+        }
     }
 }
