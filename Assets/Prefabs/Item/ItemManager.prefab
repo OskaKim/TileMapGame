@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7089113259191393807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6151032898628843168}
+  - component: {fileID: 2875452587599235358}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6151032898628843168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089113259191393807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0444193, y: -3.677039, z: -4.1811576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2875452587599235358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089113259191393807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb4bc565dfce4e46ac975f03162313b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemAnimationList:
+  - {fileID: 9100000, guid: 730f636cb5274974c8724c7e5dfee6e3, type: 2}
+  - {fileID: 9100000, guid: b771dba613944bb44a1038d2828d3873, type: 2}
+  - {fileID: 9100000, guid: cbbf85c07a5421b468362edfb062e9dd, type: 2}
+  - {fileID: 9100000, guid: b8b6650fb63f2624e962995274377363, type: 2}
+  - {fileID: 9100000, guid: 4abc9c72572256049836f45f616f4268, type: 2}
+  - {fileID: 9100000, guid: fae8e4a6f30e2e84c921517b49bd86c8, type: 2}
+  - {fileID: 9100000, guid: bf7cabce6465aa344a287087e8475c9a, type: 2}
+  - {fileID: 9100000, guid: 2c4a86ac59c0cae409424b23a45d7da6, type: 2}
+  - {fileID: 9100000, guid: 4de327b0983e33b4890ab8b10d0dde9b, type: 2}
+  - {fileID: 9100000, guid: 8ea1ef10b90585d4b85d315c92bff8a8, type: 2}
+  - {fileID: 9100000, guid: 00c5cf5299164f3488be63ac286fadb9, type: 2}
+  itemDatabase:
+    AllItem: []
+  fieldItemPrefab: {fileID: 3212831633156035748, guid: c6eb13ea340058c4e8188d880929834b, type: 3}
