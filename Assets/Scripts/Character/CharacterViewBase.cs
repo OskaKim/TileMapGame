@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterViewBase : MonoBehaviour
 {
     [SerializeField] protected CharacterModelBase model;
-    [SerializeField] private Animator animator;
+    [SerializeField] protected Animator animator;
 
     public void LateUpdate()
     {
@@ -17,7 +17,6 @@ public class CharacterViewBase : MonoBehaviour
         var dir = model.Dir;
         animator.SetFloat("Horizontal", dir.x);
         animator.SetFloat("Vertical", dir.y);
-
         animator.SetBool("IsMoving", model.IsMoving);
     }
 }

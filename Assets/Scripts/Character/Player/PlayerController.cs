@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class PlayerController : CharacterControllerBase
 {
-    public override void Update()
-    {
-        base.Update();
-    }
-
     protected override void UpdateInputHandler()
     {
         var x = Input.GetAxisRaw("Horizontal");

@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerView : CharacterViewBase
+public class NPCModel : CharacterModelBase
 {
 }
