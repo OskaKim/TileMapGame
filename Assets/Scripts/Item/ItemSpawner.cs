@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameData;
 
 public class ItemSpawner : Spawner<FieldItem>
 {
@@ -28,7 +29,7 @@ public class ItemSpawner : Spawner<FieldItem>
 
     public void FieldItemSpawn(string itemName, Vector2 pos)
     {
-        FieldItemSpawn(ItemDatabase.AllItem.FindIndex(x => x.itemName == itemName), pos);
+        FieldItemSpawn(ItemDatabase.GetByName(itemName).index, pos);
     }
     public void FieldItemSpawn(int itemIndex, Vector2 pos)
     {

@@ -1,36 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using GameData;
 
 public class UIInventory : MonoBehaviour
 {
-    [SerializeField] GameObject InventoryUIObject;
     [SerializeField] GameObject OpenInventoryUIButtonObject;
+    [SerializeField] TextMeshProUGUI CoinFund;
 
-    void Update()
+    private bool isOpen = false;
+    public bool IsOpen
     {
-        if(Input.GetKeyDown(KeyCode.I))
+        get
         {
-            if(InventoryUIObject.activeSelf)
-            {
-                CloseInventory();
-            }
-            else
-            {
-                OpenInventory();
-            }
+            return isOpen;
+        }
+        private set
+        {
+            isOpen = value;
         }
     }
 
     public void OpenInventory()
     {
-        InventoryUIObject.SetActive(true);
+        gameObject.SetActive(true);
         OpenInventoryUIButtonObject.SetActive(false);
+
+        // 캐릭터 코인양 적용
+        var data = ItemManager.Instance.possessionItemDatabase;
+        var possessionCoin = data.GetByItemIndex((int)CurrencyType.Coin);
+        CoinFund.text = possessionCoin.amount.ToString();
+        IsOpen = true;
     }
 
     public void CloseInventory()
     {
-        InventoryUIObject.SetActive(false);
+        gameObject.SetActive(false);
         OpenInventoryUIButtonObject.SetActive(true);
+        IsOpen = false;
     }
 }

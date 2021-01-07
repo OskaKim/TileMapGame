@@ -2,32 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemType
+namespace GameData
 {
-    Equipment,
-    Consumables,
-    Etc
-}
-
-[System.Serializable]
-public class Item
-{
-    public int index;
-    public ItemType itemType;
-    public string itemName;
-    public string itemSubscribe;
-
-    public bool Use()
+    public enum ItemType
     {
-        return false;
+        Equipment,
+        Consumables,
+        Etc,
     }
 
-    public void DeepCopyParam(Item _item)
+    // 각 화폐에 해당하는 인덱스 값
+    public enum CurrencyType
     {
-        index = _item.index;
-        itemType = _item.itemType;
-        itemName = _item.itemName;
-        itemSubscribe = _item.itemSubscribe;
+        Coin = 5,
+        BlueCrystal = 3,
+        GreenCrystal = 6,
     }
 
+    [System.Serializable]
+    public class Item
+    {
+        public int index;
+        public ItemType itemType;
+        public string itemName;
+        public string itemSubscribe;
+
+        public bool Use()
+        {
+            return false;
+        }
+
+        public void DeepCopyParam(Item _item)
+        {
+            index = _item.index;
+            itemType = _item.itemType;
+            itemName = _item.itemName;
+            itemSubscribe = _item.itemSubscribe;
+        }
+    }
+
+
+    [System.Serializable]
+    public class PossessionItemInfo
+    {
+        public int index;
+        public int itemIndex;
+        public int amount;
+    }
 }
