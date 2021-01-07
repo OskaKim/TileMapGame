@@ -1,0 +1,14 @@
+{
+  "PlayerItem": [
+    {
+      "index": 0,
+      "itemIndex": 5,
+      "Amount": 100
+    },
+    {
+      "index": 1,
+      "itemIndex": 6,
+      "Amount": 999
+    }
+  ]
+}
