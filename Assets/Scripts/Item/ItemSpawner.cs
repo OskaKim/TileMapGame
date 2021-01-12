@@ -18,7 +18,7 @@ public class ItemSpawner : Spawner<FieldItem>
     {
         get
         {
-            if(itemDatabase == null)
+            if (itemDatabase == null)
             {
                 itemDatabase = ItemManager.Instance.itemDatabase;
             }
@@ -27,12 +27,38 @@ public class ItemSpawner : Spawner<FieldItem>
         }
     }
 
+    private void Awake()
+    {
+        pool = new ObjectPool<FieldItem>(
+        () => {
+            return Instantiate(prefab).GetComponent<FieldItem>();
+        },
+        (item) => {
+            Destroy(item.gameObject);
+        });
+    }
+
     public void FieldItemSpawn(string itemName, Vector2 pos)
     {
         FieldItemSpawn(ItemDatabase.GetByName(itemName).index, pos);
     }
     public void FieldItemSpawn(int itemIndex, Vector2 pos)
     {
-        Spawn(pos).SetItem(ItemDatabase.AllItem[itemIndex]);
+        // 아이템 설정
+        Spawn(pos).SetItem(ItemDatabase.AllItem[itemIndex],
+        // 아이템 습득시 처리 콜백
+        (item) =>
+        {
+            pool.PushObject(item.gameObject);
+        });
+    }
+
+    public override FieldItem Spawn(Vector2 pos)
+    {
+        var obj = pool.PopObject();
+        var tranf = obj.transform;
+        tranf.localPosition = pos;
+        tranf.localRotation = Quaternion.identity;
+        return obj;
     }
 }
