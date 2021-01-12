@@ -7,22 +7,22 @@ using GameData;
 [RequireComponent(typeof(Animator))]
 public class FieldItem : MonoBehaviour
 {
-    public Item item;
+    public Item itemInfo;
     public SpriteRenderer image;
     public Animator animator;
     private Action<FieldItem> getItemCallback;
 
     public void SetItem(Item _item, Action<FieldItem> getItemCallback)
     {
-        item.DeepCopyParam(_item);
+        itemInfo.DeepCopyParam(_item);
 
-        animator.runtimeAnimatorController = ItemManager.Instance.itemAnimationList[item.index];
+        animator.runtimeAnimatorController = ItemManager.Instance.itemAnimationList[itemInfo.index];
         this.getItemCallback = getItemCallback;
     }
 
-    public Item GetItem()
+    public Item GetItemInfo()
     {
         getItemCallback(this);
-        return item;
+        return itemInfo;
     }
 }

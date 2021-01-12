@@ -10,7 +10,7 @@ public class PlayerModel : CharacterModelBase
         if (collision.CompareTag("FieldItem"))
         {
             var fieldItem = collision.GetComponent<FieldItem>();
-            Debug.Log(fieldItem.GetItem().itemName);
+            Debug.Log(fieldItem.GetItemInfo().itemName);
         }
     }
 }

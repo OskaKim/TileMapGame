@@ -48,5 +48,12 @@ namespace GameData
         public int index;
         public int itemIndex;
         public int amount;
+
+        public PossessionItemInfo(int index, int itemIndex, int amount)
+        {
+            this.index = index;
+            this.itemIndex = itemIndex;
+            this.amount = amount;
+        }
     }
 }

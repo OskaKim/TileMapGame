@@ -29,6 +29,28 @@ namespace GameData
         {
             return ItemInfos.Find((x) =>  x.itemIndex == itemIndex);
         }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="itemIndex">아이템 종류</param>
+        /// <param name="amount">양</param>
+        public void Add(int itemIndex, int amount)
+        {
+            switch(itemIndex)
+            {
+                case (int)CurrencyType.Coin:
+                case (int)CurrencyType.BlueCrystal:
+                case (int)CurrencyType.GreenCrystal:
+                    GetByItemIndex(itemIndex).amount += amount;
+                    break;
+
+                default:
+                    ItemInfos.Add(new PossessionItemInfo(ItemInfos.Count, itemIndex, amount));
+                    break;
+            }
+
+        }
     }
 
     public class ItemManager : MonoBehaviour

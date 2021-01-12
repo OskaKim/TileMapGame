@@ -27,8 +27,12 @@ public class ItemSpawner : Spawner<FieldItem>
         }
     }
 
+    private PossessionItemDatabase possessionItemDatabase;
+
     private void Awake()
     {
+        possessionItemDatabase = ItemManager.Instance.possessionItemDatabase;
+
         pool = new ObjectPool<FieldItem>(
         () => {
             return Instantiate(prefab).GetComponent<FieldItem>();
@@ -50,6 +54,7 @@ public class ItemSpawner : Spawner<FieldItem>
         (item) =>
         {
             pool.PushObject(item.gameObject);
+            possessionItemDatabase.Add(item.itemInfo.index, 1);
         });
     }
 
