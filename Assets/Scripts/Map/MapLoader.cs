@@ -13,7 +13,7 @@ public class MapLoader : MonoBehaviour
     {
         foreach(var info in fieldItemSpawnInfos)
         {
-            itemSpawner.FieldItemSpawn(info.name, info.pos);
+            itemSpawner.FieldItemSpawn(info.name, info.pos, info.amount);
         }
     }
 }

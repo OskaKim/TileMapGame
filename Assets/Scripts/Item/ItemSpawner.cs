@@ -11,6 +11,7 @@ public class ItemSpawner : Spawner<FieldItem>
     {
         public string name;
         public Vector2 pos;
+        public uint amount;
     }
 
     private ItemDatabase itemDatabase;
@@ -42,11 +43,11 @@ public class ItemSpawner : Spawner<FieldItem>
         });
     }
 
-    public void FieldItemSpawn(string itemName, Vector2 pos)
+    public void FieldItemSpawn(string itemName, Vector2 pos, uint amount)
     {
-        FieldItemSpawn(ItemDatabase.GetByName(itemName).index, pos);
+        FieldItemSpawn(ItemDatabase.GetByName(itemName).index, pos, amount);
     }
-    public void FieldItemSpawn(int itemIndex, Vector2 pos)
+    public void FieldItemSpawn(int itemIndex, Vector2 pos, uint amount)
     {
         // 아이템 설정
         Spawn(pos).SetItem(ItemDatabase.AllItem[itemIndex],
@@ -54,7 +55,7 @@ public class ItemSpawner : Spawner<FieldItem>
         (item) =>
         {
             pool.PushObject(item.gameObject);
-            possessionItemDatabase.Add(item.itemInfo.index, 1);
+            possessionItemDatabase.Add(item.itemInfo.index, (int)amount);
         });
     }
 

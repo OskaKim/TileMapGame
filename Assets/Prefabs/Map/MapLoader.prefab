@@ -92,11 +92,16 @@ MonoBehaviour:
   fieldItemSpawnInfos:
   - name: Coin
     pos: {x: 20, y: -5}
+    amount: 100
   - name: Coin
     pos: {x: 18, y: -5}
+    amount: 50
   - name: Coin
     pos: {x: 16, y: -5}
+    amount: 50
   - name: Small Health Potion
     pos: {x: 2.38, y: 3.36}
+    amount: 1
   - name: Small Mana Potion
     pos: {x: 4.5, y: 3.36}
+    amount: 2
