@@ -26,6 +26,11 @@ public class House : MonoBehaviour
         IsOpen = isOpen;
     }
 
+    public void ReverseOpenState()
+    {
+        IsOpen = !IsOpen;
+    }
+
     private void UpdateState()
     {
         spriteRenderer.sprite = isOpen ? OpenSprite : CloseSprite;
