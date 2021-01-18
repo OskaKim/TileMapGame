@@ -8,7 +8,6 @@ using GameData;
 public class FieldItem : MonoBehaviour
 {
     public Item itemInfo;
-    public SpriteRenderer image;
     public Animator animator;
     private Action<FieldItem> getItemCallback;
 

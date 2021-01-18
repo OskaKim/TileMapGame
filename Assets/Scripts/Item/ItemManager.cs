@@ -59,6 +59,7 @@ namespace GameData
         private static ItemManager instance;
         public static ItemManager Instance { get => instance; }
         #endregion
+        // TODO : 데이터에서 읽어들이도록 해야함
         [SerializeField] public List<RuntimeAnimatorController> itemAnimationList;
         [SerializeField] public ItemDatabase itemDatabase;
         [SerializeField] public PossessionItemDatabase possessionItemDatabase;
