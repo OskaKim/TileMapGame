@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterControllerBase : MonoBehaviour
+public abstract class CharacterControllerBase : MonoBehaviour
 {
     [SerializeField] protected CharacterModelBase model;
 
-    protected virtual void Awake() { }
+    private void Awake()
+    {
+        if(model == null) model = GetComponent<CharacterModelBase>();
+        Init();
+    }
 
-    public virtual void Update()
+    private void Update()
     {
         UpdateInputHandler();
     }
+    
+    // 초기화 정의
+    protected abstract void Init();
 
-    protected virtual void UpdateInputHandler(){}
+    // 입력 정의
+    protected abstract void UpdateInputHandler();
 
 }

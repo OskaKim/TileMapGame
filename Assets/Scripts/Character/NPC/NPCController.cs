@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 public class NPCController : CharacterControllerBase
 {
@@ -18,9 +19,8 @@ public class NPCController : CharacterControllerBase
     private bool ArriveX, ArriveY;
     private bool UpdateXFirst = false;
 
-    protected override void Awake()
+    protected override void Init()
     {
-        base.Awake();
         originPos = transform.localPosition;
     }
 
@@ -49,7 +49,7 @@ public class NPCController : CharacterControllerBase
         var tx = Random.Range(-maxMovDis / 2, maxMovDis / 2);
         var ty = Random.Range(-maxMovDis / 2, maxMovDis / 2);
         targetPos = originPos + new Vector2(tx, ty);
-        UpdateXFirst = Utility.RandomUtility.Bool();
+        UpdateXFirst = RandomUtility.Bool();
     }
 
     private void UpdateArriveState()
@@ -60,26 +60,21 @@ public class NPCController : CharacterControllerBase
 
     private void UpdateDir()
     {
-        int x = 0, y = 0;
-        
-        // x축부터 움직일 경우
-        if(UpdateXFirst)
+        if (ArriveX && ArriveY)
         {
-            if(!ArriveX) x = relativeVec.x > 0 ? 1 : -1;
-            else if (!ArriveY) y = relativeVec.y > 0 ? 1 : -1;
+            if(model.IsMoving) model.IsMoving = false;
+            return;
         }
-        // y축부터 움직일 경우
-        else
-        {
-            if (!ArriveY) y = relativeVec.y > 0 ? 1 : -1;
-            else if (!ArriveX) x = relativeVec.x > 0 ? 1 : -1;
-        }
-        
-        model.IsMoving = x != 0 || y != 0;
+
+        var priority = !ArriveX && (UpdateXFirst || ArriveY) ? MathUtility.VecType.x : MathUtility.VecType.y;
+
+        var dir = MathUtility.GetDirOnlyOneSide(relativeVec, priority);
+
+        model.IsMoving = dir.x != 0 || dir.y != 0;
 
         if (model.IsMoving)
         {
-            model.Dir = new Vector2(x, y);
+            model.Dir = dir;
         }
     }
 }
