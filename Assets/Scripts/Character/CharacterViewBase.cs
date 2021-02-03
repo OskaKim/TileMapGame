@@ -7,7 +7,13 @@ public class CharacterViewBase : MonoBehaviour
     [SerializeField] protected CharacterModelBase model;
     [SerializeField] protected Animator animator;
 
-    public void LateUpdate()
+    private void Awake()
+    {
+        if (model == null) model = GetComponent<CharacterModelBase>();
+        if (animator == null) animator = GetComponent<Animator>();
+    }
+
+    private void LateUpdate()
     {
         UpdateAnimator();
     }

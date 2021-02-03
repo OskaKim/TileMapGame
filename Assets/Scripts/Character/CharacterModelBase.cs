@@ -9,6 +9,7 @@ public class CharacterModelBase : MonoBehaviour
     // 각 축을 기준으로 -1,0,1의 값.
     public Vector2 Dir { get; set; }
     public bool IsMoving { get; set; }
+    public float MoveSpeed { get; set; }
 
     public void Update()
     {
