@@ -10,8 +10,8 @@ using GameData.Json;
 using UnityEngine.Tilemaps;
 
 /// <summary>
-/// ¸Ê ÀÛ¼º¿ë ¿¡µðÅÍ
-/// ±â´É : ÇÊµå ¾ÆÀÌÅÛ, NPC µî À§Ä¡ ¼öÁ¤ µî ÀÛ¼º ¿¹Á¤
+/// ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+/// ï¿½ï¿½ï¿½ : ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, NPC ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Û¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 /// </summary>
 [CustomEditor(typeof(MapLoader))]
 public class MapEditor : Editor
@@ -27,15 +27,15 @@ public class MapEditor : Editor
     private static int selectedIndex = 0;
     private static List<GameObject> createdItems = new List<GameObject>();
 
-    // TODO : ´Ù¸¥ ¿ÀºêÁ§Æ®¸¦ Å¬¸¯ÇÏ°í µ¹¾Æ¿ÔÀ»¶§ ÀÌÀüÀÇ »óÅÂ°¡ º¸ÀüµÇ¸é ÁÁ°ÚÀ½
+    // TODO : ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private void OnEnable()
     {
         mapLoader = (MapLoader)target;
 
-        // ¾À¿¡ µîÀåÇÏ´Â ¸ðµç Å¸ÀÏ¸Ê ÀúÀå
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ Å¸ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½
         tileMaps = FindObjectsOfType<Tilemap>();
 
-        // ¿©±â¼­ ¾ÆÀÌÅÛ ÀüÃ¼ ¸®½ºÆ® ½Àµæ
+        // ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         var itemDatabase = JsonImporter.LoadJsonFile<ItemDatabase>(itemDataPath, "ItemDatabase");
         allItems = itemDatabase.AllItem;
 
@@ -69,7 +69,7 @@ public class MapEditor : Editor
         if(createdItems == null) createdItems = new List<GameObject>();
 
         var newItemName = itemNameList[selectedIndex];
-        // ¿©±â¼­ ¼±ÅÃÇÑ ¾ÆÀÌÅÛÀ» »ý¼º
+        // ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         var newItem = new GameObject("item_" + createdItems.Count);
         var sr = newItem.AddComponent<SpriteRenderer>();
         sr.sprite = Resources.Load($"Items/Origin/{newItemName}Moving", typeof(Sprite)) as Sprite;
@@ -146,7 +146,7 @@ public class MapEditor : Editor
 
     private void LoadTileMap(string name, Transform parent = null)
     {
-        var o = Instantiate(mapLoader.transform.FindChild("TileMapEmpty"));
+        var o = Instantiate(mapLoader.transform.Find("TileMapEmpty"));
         o.name = name;
         o.parent = parent;
         var tileMap = o.GetComponent<Tilemap>();
@@ -166,9 +166,9 @@ public class MapEditor : Editor
 [System.Serializable]
 class TileMapData
 {
-    // Å¸ÀÏ À§Ä¡ ¸®½ºÆ®
+    // Å¸ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½Æ®
     public List<Vector2Int> tilePos;
-    // Å¸ÀÏ ÀÌ¸§ ¸®½ºÆ®
+    // Å¸ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
     public List<string> tileNames;
 }
 
